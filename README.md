@@ -65,7 +65,7 @@ it's the whole abbreviation that's unique, not the individual words.
     Carabus nemoralis,Ca.ne.
     Carabus nitens,Ca.ni.
     Carabus problematicus,Ca.pro.
-    Carabus violaceus,Ca.vio.
+    Carabus violaceus,Ca.vi.
     Leistus ferrugineus,Leis.fer.
     Leistus fulvibarbis,Leis.ful.
 
