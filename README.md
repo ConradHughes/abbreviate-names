@@ -42,6 +42,7 @@ it's the whole abbreviation that's unique, not the individual words.
 
 ```shell
 
+    $ pip install cltk==0.1.121    # For Latin; haven't updated to current CLTK
     $ pip install 'abbreviate-names[Latin,English]'
 
     $ cat test.csv                 # Note first line is column name
@@ -56,7 +57,7 @@ it's the whole abbreviation that's unique, not the individual words.
     Leistus ferrugineus
     Leistus fulvibarbis
 
-    $ abbreviate-names test.csv
+    $ abbreviate-names --latin test.csv
     taxa,Abbreviation
     Cicindela campestris,Ci.cam.
     Cychrus caraboides,Cyc.ca.
