@@ -12,11 +12,7 @@ This packages provides both
 
 If installed with English or Latin options it also includes dependencies
 on natural language modules which enable it to break names up at
-syllable boundaries, which produces more readable results:
-
-```shell
-    pip install 'abbreviate-names[Latin,English]'
-```
+syllable boundaries, which produces more readable results.
 
 # Example output
 
@@ -41,6 +37,38 @@ Observe:
 * Several different words above are all shortened to “Xy.” or “X.” —
 it's the whole abbreviation that's unique, not the individual words.
 * The already-abbreviated “sp.” is untouched.
+
+# Getting started
+
+```shell
+
+    $ pip install 'abbreviate-names[Latin,English]'
+
+    $ cat test.csv                 # Note first line is column name
+    taxa
+    Cicindela campestris
+    Cychrus caraboides
+    Carabus granulatus
+    Carabus nemoralis
+    Carabus nitens
+    Carabus problematicus
+    Carabus violaceus
+    Leistus ferrugineus
+    Leistus fulvibarbis
+
+    $ abbreviate-names test.csv
+    taxa,Abbreviation
+    Cicindela campestris,Ci.cam.
+    Cychrus caraboides,Cyc.ca.
+    Carabus granulatus,Ca.gra.
+    Carabus nemoralis,Ca.ne.
+    Carabus nitens,Ca.ni.
+    Carabus problematicus,Ca.pro.
+    Carabus violaceus,Ca.vio.
+    Leistus ferrugineus,Leis.fer.
+    Leistus fulvibarbis,Leis.ful.
+
+```
 
 # Online
 
